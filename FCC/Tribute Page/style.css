@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Title */
+
+#title {
+  padding: 1.5em 1em;
+  text-align: center;
+  background: #ddd;
+}
+
+#title h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Image */
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tribute Info */
+#tribute-info {
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#tribute-info h2 {
+  text-align: center;
+  padding: 1.5em 0.2em;
+  font-size: 1.5em;
+}
+
+#timeline {
+  max-width: 40%;
+  /* line-height: 2.5; */
+}
+
+#timeline ul li {
+  font-size: 1.2em;
+  /* padding: 1.5em auto; */
+  margin: 1.2em auto;
+}
+
+#timeline ul span {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 1em 0.2em;
+}

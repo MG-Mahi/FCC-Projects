@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FCC : Survey Form</title>
+  </head>
+  <body>
+    <!-- <h1>Hello</h1> -->
+    <main id="main">
+      <h1 id="title">FCC Survey Form</h1>
+      <p id="description">Helps us to improve the platform</p>
+      <div class="container">
+        <!-- Form -->
+        <form action="no-action.php" id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email-label">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter you Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="number" id="number-label"
+              >Age<span>(Optional)</span></label
+            >
+            <input
+              type="number"
+              name="Age"
+              class="form-control"
+              id="number"
+              placeholder="Enter your Age"
+              min="13"
+              max="60"
+            />
+          </div>
+          <div class="form-group">
+            <label for="job-role">Job Role</label>
+            <select name="job" id="dropdown" class="form-control">
+              <option value="disable" disabled selected>Select Role</option>
+              <option value="Developer">Developer</option>
+              <option value="Teacher">Teacher</option>
+              <option value="Student">Student</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <div class="form-group para">
+            <label for=""><p>How did you know about FCC?</p></label>
+
+            <label for="radio1"
+              ><input
+                type="radio"
+                class="radio-click"
+                name="radio"
+                id="radio1"
+                value="Youtube"
+                checked
+              />
+              Youtube</label
+            >
+
+            <label for="radio2"
+              ><input
+                type="radio"
+                class="radio-click"
+                name="radio"
+                id="radio2"
+                value="Social Media"
+              />
+              Social Media</label
+            >
+
+            <label for="radio3">
+              <input
+                type="radio"
+                class="radio-click"
+                name="radio"
+                id="radio3"
+                value="friends"
+              />
+              Friends
+            </label>
+
+            <label for="radio4">
+              <input
+                type="radio"
+                class="radio-click"
+                name="radio"
+                id="radio4"
+                value="others"
+              />
+              Others
+            </label>
+          </div>
+
+          <div class="form-group para">
+            <label for="checkboxs"
+              ><p>What are your favourite courses in FCC?</p></label
+            >
+            <label for="check1"
+              ><input
+                type="checkbox"
+                name="check"
+                class="check"
+                id="check1"
+                value="RWD"
+              />Responsive Web design</label
+            >
+
+            <label for="check2">
+              <input
+                type="checkbox"
+                name="check"
+                class="check"
+                id="check2"
+                value="JSDSA"
+              />
+              JS DSA course
+            </label>
+
+            <label for="check3">
+              <input
+                type="checkbox"
+                name="check"
+                class="check"
+                id="check3"
+                value="FDL"
+              />
+              Front-end Development
+            </label>
+
+            <label for="check4">
+              <input
+                type="checkbox"
+                name="check"
+                class="check"
+                id="check4"
+                value="DV"
+              />
+              Data Visualization
+            </label>
+
+            <label for="check5">
+              <input
+                type="checkbox"
+                name="check"
+                class="check"
+                id="check5"
+                value="MLP"
+              />
+              Machine learning w/ python
+            </label>
+          </div>
+          <div class="form-group para">
+            <label for="textarea">Give your Suggestions</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              class="form-control"
+              rows="30"
+              placeholder="Comment Here"
+            ></textarea>
+          </div>
+          <div class="form-group para">
+            <button type="submit" id="submit" class="form-control">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
